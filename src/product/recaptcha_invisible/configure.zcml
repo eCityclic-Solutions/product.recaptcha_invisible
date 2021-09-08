@@ -10,6 +10,7 @@
   <include package=".browser" />
   <include file="permissions.zcml" />
   <include file="field.zcml" />
+  <include file="widget.zcml" />
 
   <genericsetup:registerProfile
       name="default"

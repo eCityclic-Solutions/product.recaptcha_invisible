@@ -1,0 +1,17 @@
+<div class="g-recaptcha"
+    data-sitekey="${view/site_key}"
+    data-badge="inline"
+    data-size="invisible">
+</div>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    $(function () {
+        let form = $('.g-recaptcha').closest('form')
+        form.on('submit', function (event) {
+            event.preventDefault()
+            console.log('execute captcha')
+            grecaptcha.execute()
+            console.log('executed captcha')
+        })
+    })
+</script>
