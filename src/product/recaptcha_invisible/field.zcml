@@ -10,14 +10,14 @@
         name="product.recaptcha_invisible.field.RecaptchaInvisibleField"
         component=".field.RecaptchaInvisibleHandler"
         />
-<!--     <adapter
+    <adapter
         provides="z3c.form.interfaces.IValidator"
         for="*
              *
              *
              product.recaptcha_invisible.interfaces.IRecaptchaInvisibleField
              *"
-        factory="plone.formwidget.recaptcha.ReCaptchaValidator"
+        factory="product.recaptcha_invisible.validator.RecaptchaInvisibleValidator"
         />
- -->
+
 </configure>
