@@ -3,6 +3,9 @@
     $(function () {
         let timestamp = ${python:view.timestamp}
         let form = $('#g-recaptcha-' + timestamp).closest('form')
+        let label = $('#g-recaptcha-' + timestamp).siblings('label')
+        label.hide()
+        console.log(label)
 
         form.on('submit', function (e) {
             if (form.data('recaptcha-verified')) {
@@ -23,6 +26,5 @@
 <div class="g-recaptcha" id="g-recaptcha-${view/timestamp}"
     data-sitekey="${view/site_key}"
     data-callback="recaptchaCallback_${python:view.timestamp}"
-    data-badge="inline"
     data-size="invisible">
 </div>

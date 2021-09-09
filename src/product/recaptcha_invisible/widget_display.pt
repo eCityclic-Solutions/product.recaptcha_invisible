@@ -1,1 +1,7 @@
-<tal:comment condition="nothing">The widget isn't shown display mode</tal:comment>
+<div class="recaptcha-invisible-display"></div>
+<script>
+    $(function () {
+        let label = $('.recaptcha-invisible-display').siblings('label')
+        label.hide()
+    })
+</script>

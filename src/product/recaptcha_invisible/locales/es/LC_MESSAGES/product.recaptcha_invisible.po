@@ -16,7 +16,7 @@ msgstr ""
 
 #: ../validator.py:10
 msgid "Failed to verify Recaptcha"
-msgstr "Failed to verify Recaptcha"
+msgstr "Error al verificar el Recaptcha"
 
 #: ../configure.zcml:23
 msgid "Installs the product.recaptcha_invisible add-on."
@@ -24,15 +24,15 @@ msgstr "Installs the product.recaptcha_invisible add-on."
 
 #: ../browser/verify.py:59
 msgid "No recaptcha private key configured"
-msgstr "No recaptcha private key configured"
+msgstr "No se ha configurado la clave privada del recaptcha"
 
 #: ../controlpanel.py:19
 msgid "Private key"
-msgstr "Private key"
+msgstr "Clave privada"
 
 #: ../controlpanel.py:14
 msgid "Public key"
-msgstr "Public key"
+msgstr "Clave pública"
 
 #: ../controlpanel.py:31
 #: ../field.py:18
@@ -46,7 +46,7 @@ msgstr "Recaptcha Invisible Widget"
 
 #: ../controlpanel.py:32
 msgid "Settings for recaptcha invisible. Configure the public and private key"
-msgstr "Settings for recaptcha invisible. Configure the public and private key"
+msgstr "Configuración para el recaptcha invisible. Configure la clave pública y la privada"
 
 #: ../configure.zcml:32
 msgid "Uninstalls the product.recaptcha_invisible add-on."
