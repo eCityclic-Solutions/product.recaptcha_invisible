@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from plone import api
 from product.recaptcha_invisible import _
 from product.recaptcha_invisible.interfaces import IRecaptchaInvisibleField
 from product.recaptcha_invisible.interfaces import IRecaptchaInvisibleWidget
@@ -17,7 +18,8 @@ class RecaptchaInvisibleWidget(TextWidget):
     label = _('Recaptcha Invisible Widget')
 
     def site_key(self):
-        return ''
+        public_key = api.portal.get_registry_record('recaptcha_invisible.public_key')
+        return public_key
 
 
 @implementer(IFieldWidget)
