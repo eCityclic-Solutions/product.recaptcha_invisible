@@ -2,11 +2,16 @@
 <script>
     $(function () {
         let timestamp = ${python:view.timestamp}
+        let submitter = undefined
         let form = $('#g-recaptcha-' + timestamp).closest('form')
         let label = $('#g-recaptcha-' + timestamp).siblings('label')
         label.hide()
 
         form.on('submit', function (e) {
+            try {
+                submitter = e.originalEvent.submitter
+            } catch {}
+
             if (form.data('recaptcha-verified')) {
                 return true
             }
@@ -17,7 +22,11 @@
 
         window.recaptchaCallback_${python:view.timestamp} = function () {
             form.data('recaptcha-verified', true).submit()
-            form.submit()
+            if (submitter) {
+                submitter.click()
+            } else {
+                form.submit()
+            }
         }
 
     })
