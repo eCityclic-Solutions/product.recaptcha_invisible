@@ -1,17 +1,28 @@
-<div class="g-recaptcha"
-    data-sitekey="${view/site_key}"
-    data-badge="inline"
-    data-size="invisible">
-</div>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
     $(function () {
-        let form = $('.g-recaptcha').closest('form')
-        form.on('submit', function (event) {
-            event.preventDefault()
-            console.log('execute captcha')
+        let timestamp = ${python:view.timestamp}
+        let form = $('#g-recaptcha-' + timestamp).closest('form')
+
+        form.on('submit', function (e) {
+            if (form.data('recaptcha-verified')) {
+                return true
+            }
+
+            e.preventDefault()
             grecaptcha.execute()
-            console.log('executed captcha')
         })
+
+        window.recaptchaCallback_${python:view.timestamp} = function () {
+            form.data('recaptcha-verified', true).submit()
+            form.submit()
+        }
+
     })
 </script>
+<div class="g-recaptcha" id="g-recaptcha-${view/timestamp}"
+    data-sitekey="${view/site_key}"
+    data-callback="recaptchaCallback_${python:view.timestamp}"
+    data-badge="inline"
+    data-size="invisible">
+</div>

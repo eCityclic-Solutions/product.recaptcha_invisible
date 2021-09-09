@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from datetime import datetime
 from plone import api
 from product.recaptcha_invisible import _
 from product.recaptcha_invisible.interfaces import IRecaptchaInvisibleField
@@ -16,6 +17,7 @@ class RecaptchaInvisibleWidget(TextWidget):
 
     name = 'recaptcha-invisible-widget'
     label = _('Recaptcha Invisible Widget')
+    timestamp = datetime.now().strftime('%s')
 
     def site_key(self):
         public_key = api.portal.get_registry_record('recaptcha_invisible.public_key')
