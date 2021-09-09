@@ -14,6 +14,7 @@ class RecaptchaInvisibleField(TextLine):
 
 
 RecaptchaInvisibleFactory = FieldFactory(
-    RecaptchaInvisibleField, _(u'Recaptcha Invisible')
+    RecaptchaInvisibleField,
+    _(u'Recaptcha Invisible'),
 )
 RecaptchaInvisibleHandler = BaseHandler(RecaptchaInvisibleField)
