@@ -14,8 +14,8 @@ long_description = '\n\n'.join([
 
 setup(
     name='product.recaptcha_invisible',
-    version='1.0a1',
-    description="product.recaptcha_invisible",
+    version='1.0',
+    description="Recaptcha Invisible suport for Plone",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
     classifiers=[
@@ -32,7 +32,7 @@ setup(
     keywords='Python Plone',
     author='csanahuja',
     author_email='csanahuja10@gmail.com',
-    url='https://github.com/collective/product.recaptcha_invisible',
+    url='https://gitlab.com/csanahuja/product.recaptcha_invisible',
     project_urls={
         # 'PyPI': 'https://pypi.python.org/pypi/product.recaptcha_invisible',
         # 'Documentation': 'https://product.recaptcha_invisible.readthedocs.io/en/latest/',

@@ -6,33 +6,23 @@
 product.recaptcha_invisible
 ===========================
 
-Tell me what your product does
+Recaptcha Invisible support for Plone. Provides a field and a widget ready to be used in zope schemas
 
 Features
 --------
 
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
+- Field
+- Widget
+- Validator
 
 Translations
 ------------
 
 This product has been translated into
 
-- Klingon (thanks, K'Plai)
+- Catalan
+- Spanish
+- English
 
 
 Installation
@@ -51,19 +41,17 @@ Install product.recaptcha_invisible by adding it to your buildout::
 and then running ``bin/buildout``
 
 
-Contribute
-----------
+Classifiers
+-----------
 
-- Issue Tracker: https://github.com/collective/product.recaptcha_invisible/issues
-- Source Code: https://github.com/collective/product.recaptcha_invisible
-- Documentation: https://docs.plone.org/foo/bar
+Framework
 
+- Plone 5.2
 
-Support
--------
+Programming Language
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+- Python 3.6
+- Python 3.7
 
 
 License

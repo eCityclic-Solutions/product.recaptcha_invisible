@@ -5,7 +5,6 @@
         let form = $('#g-recaptcha-' + timestamp).closest('form')
         let label = $('#g-recaptcha-' + timestamp).siblings('label')
         label.hide()
-        console.log(label)
 
         form.on('submit', function (e) {
             if (form.data('recaptcha-verified')) {
