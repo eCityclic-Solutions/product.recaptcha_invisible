@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='product.recaptcha_invisible',
-    version='1.0',
+    version='1.1',
     description="Recaptcha Invisible suport for Plone",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
