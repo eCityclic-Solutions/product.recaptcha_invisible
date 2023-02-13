@@ -1,6 +1,14 @@
 Changelog
 =========
 
+1.2 (13/02/2023)
+------------------
+
+Fixes:
+
+- Fix widget input submitting form with submit-widget input if exists
+  [csanahuja]
+
 1.1 (09/09/2021)
 ------------------
 
