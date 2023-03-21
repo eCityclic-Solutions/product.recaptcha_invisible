@@ -1,6 +1,15 @@
 Changelog
 =========
 
+1.3 (21/03/2023)
+------------------
+
+Fixes:
+
+- Fix widget for easyform when more than one button with submit-widget class exists
+  [csanahuja]
+
+
 1.2 (13/02/2023)
 ------------------
 
