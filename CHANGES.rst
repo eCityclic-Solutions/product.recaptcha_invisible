@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.0 (11/04/2023)
+------------------
+
+- Update widget to Boostrap 5 and Plone 6 [csanahuja]
+
+
 1.3 (21/03/2023)
 ------------------
 

@@ -6,14 +6,14 @@
 
     <z3c:widgetTemplate
         template="widget_display.pt"
-        layer="z3c.form.interfaces.IFormLayer"
+        layer="plone.app.z3cform.interfaces.IPloneFormLayer"
         mode="display"
         widget="product.recaptcha_invisible.interfaces.IRecaptchaInvisibleWidget"
         />
 
     <z3c:widgetTemplate
         template="widget_input.pt"
-        layer="z3c.form.interfaces.IFormLayer"
+        layer="plone.app.z3cform.interfaces.IPloneFormLayer"
         mode="input"
         widget="product.recaptcha_invisible.interfaces.IRecaptchaInvisibleWidget"
         />
