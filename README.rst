@@ -1,7 +1,3 @@
-.. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
-   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
-   This text does not appear on pypi or github. It is a comment.
-
 ===========================
 product.recaptcha_invisible
 ===========================
@@ -44,9 +40,10 @@ Configuration
 ------------
 
 After installing the product in your Plone Site you need to register a new Google Recaptcha invisible in https://www.google.com/recaptcha/about/
-Once you the public and private keys you need to setup them in `/@@recaptcha-invisible-controlpanel` controlpanel
 
-This product is also compatible with collective.easyform, all you need to do is enable `Recaptcha Invisible` field in `/@@easyform-controlpanel` controlpanel
+Once you the public and private keys you need to setup them in ``/@@recaptcha-invisible-controlpanel`` controlpanel
+
+This product is also compatible with collective.easyform, all you need to do is enable ``Recaptcha Invisible`` field in ``/@@easyform-controlpanel`` controlpanel
 
 Usage
 ------------
