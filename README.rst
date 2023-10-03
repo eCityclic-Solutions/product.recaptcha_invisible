@@ -69,9 +69,9 @@ Known issues
 
 The Recaptcha appearence will show a floating right badge. This can cause problems when the recaptcha is displayed inside a Plone modal, in order to avoid this you can always customize the recaptcha with a small css::
 
-.grecaptcha-badge {
-    position: static!important;
-}
+    .grecaptcha-badge {
+        position: static!important;
+    }
 
 Classifiers
 -----------
