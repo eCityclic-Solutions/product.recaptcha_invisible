@@ -6,7 +6,7 @@
 product.recaptcha_invisible
 ===========================
 
-Recaptcha Invisible support for Plone. Provides a field and a widget ready to be used in zope schemas
+Google Recaptcha Invisible support for Plone. Provides a field and a widget ready to be used in zope schemas
 
 Features
 --------
@@ -47,11 +47,11 @@ Classifiers
 Framework
 
 - Plone 5.2
+- Plone 6.0
 
 Programming Language
 
-- Python 3.6
-- Python 3.7
+- Python +3.7
 
 
 License
