@@ -40,6 +40,13 @@ Install product.recaptcha_invisible by adding it to your buildout::
 
 and then running ``bin/buildout``
 
+Configuration
+------------
+
+After installing the product in your Plone Site you need to register a new Google Recaptcha invisible in https://www.google.com/recaptcha/about/
+Once you the public and private keys you need to setup them in `/@@recaptcha-invisible-controlpanel` controlpanel
+
+
 
 Classifiers
 -----------
@@ -58,3 +65,9 @@ License
 -------
 
 The project is licensed under the GPLv2.
+
+Compatibility
+-------
+1.x targets Plone 5.2
+2.x targets Plone 6
+
